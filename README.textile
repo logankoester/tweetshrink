@@ -1,0 +1,30 @@
+h1. TweetShrink
+
+This gem provides a Ruby interface to the TweetShrink API.
+
+h2. What is TweetShrink?
+
+bq. Tweetshrink tries its very best to fit your text within the harsh constraints of a tweet by replacing common phrases and words with shorter representations. Kind of like running your new text through the dryer or sending it to fat camp.
+
+"More":http://tweetshrink.com/about
+
+h2. Requirements
+
+"HTTParty":http://github.com/jnunemaker/httparty/tree/master
+
+h2. Installation
+
+bq. rake gem
+gem install pkg/tweetshrink-0.0.1.gem
+
+h2. Usage
+
+bq. require 'tweetshrink'
+t = TweetShrink.shrink("Some text to shrink")
+t['text'] # The short text
+t['original_text'] # The long text
+t['difference'] # The difference (number of characters eliminated)
+
+h2. Copyright
+
+Copyright (c) 2008 Logan Koester. See LICENSE for details.
