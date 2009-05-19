@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Logan Koester"]
   s.date = %q{2009-03-05}
-  s.description = %q{TODO}
+  s.description = %q{API Wrapper for TweetShrink}
   s.email = %q{logan@logankoester.com}
   s.files = ["VERSION.yml", "README.textile", "lib/tweetshrink.rb", "spec/spec_helper.rb", "spec/tweetshrink_spec.rb"]
   s.has_rdoc = true
@@ -27,3 +27,4 @@ Gem::Specification.new do |s|
   else
   end
 end
+
