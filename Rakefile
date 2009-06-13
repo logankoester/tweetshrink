@@ -7,7 +7,7 @@ begin
     s.summary = %Q{API Wrapper for TweetShrink}
     s.email = "logan@logankoester.com"
     s.homepage = "http://github.com/logankoester/tweetshrink"
-    s.description = "TODO"
+    s.description = "Ruby interface to the TweetShrink API"
     s.authors = ["Logan Koester"]
   end
 rescue LoadError

@@ -1,6 +1,7 @@
 h1. TweetShrink
 
-This gem provides a Ruby interface to the TweetShrink API.
+This gem provides a Ruby interface to the TweetShrink API, as well as a shell command that can
+be used as a filter for your favorite text editor.
 
 h2. What is TweetShrink?
 
@@ -17,7 +18,15 @@ h2. Installation
 bq. rake gem
 gem install pkg/tweetshrink-0.0.1.gem
 
-h2. Usage
+h2. Shell usage
+
+# You can use STDIN
+$ echo "Some text to shrink" | tweetshrink # => "sum text 2 shrnk"
+
+# or a file
+$ tweetshrink [filename]
+
+h2. Ruby usage
 
 bq. require 'tweetshrink'
 t = TweetShrink.shrink("Some text to shrink")
